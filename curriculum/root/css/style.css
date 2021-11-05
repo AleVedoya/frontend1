@@ -2,40 +2,74 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Prompt", sans-serif;
+  color: #444443;
 }
 
-main {
+body {
   width: 85%;
   margin: auto;
 }
 
 .header {
-  background-color: #e5e5e5;
+  background-image: url(/imagenes/fondo6.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
+  height: 300px;
   width: 100%;
   margin: 0 auto 100px auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #DEFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  font-size: 15px;
+  list-style: none;
+  margin: 10px 15px 10px auto;
+}
+
+.nav-list li {
+  padding-right: 20px;
+  text-transform: uppercase;
 }
 
 .title {
-  background-color: #c4c4c4;
+  background-color:#DEFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
-  font-style: bold;
-  height: 60px;
-  letter-spacing: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  height: 40px;
+  letter-spacing: 10px;
 }
 
 .foto {
   display: block;
   margin: auto;
-  width: 200px;
+  width: 175px;
+}
+
+section {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding-bottom: 15px;
 }
 
 h2.title {
+  font-weight: 500;
   font-size: 15px;
   height: 30px;
   justify-content: left;
@@ -49,21 +83,19 @@ h2.title {
   list-style: none;
 }
 
-ul.icons li {
-  padding: 5px;
-}
-
 footer {
-  background-color: #005677;
+  background-color: #737373;
   text-align: center;
-  height: 80px;
-  padding: 10px;
-  margin: 50px auto 0 auto;
+  height: 90px;
+  margin: 50px auto 0;
+  box-shadow: 0 10px 3px rgb(0 0 0 / 0.2);
 }
 
-h3 {
-  font-size: 20px;
+h3.footer-title {
   color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 10px;
 }
 
 footer ul {
@@ -71,6 +103,7 @@ footer ul {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-bottom: 10px;
 }
 
 footer ul.footer-list {
@@ -82,3 +115,16 @@ footer ul.footer-list {
   list-style: none;
 }
 
+.color {
+  color: rgb(255, 255, 255);
+}
+ 
+/* CSS de la seccion Sobre Mí */
+
+header.header.sobremi {
+  display: flex;
+  flex-direction: column;
+  background-color: #444443;
+  color: rgb(255, 255, 255);
+
+}
