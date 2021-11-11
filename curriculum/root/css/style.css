@@ -4,12 +4,17 @@
   margin: 0;
   font-family: "Prompt", sans-serif;
   color: #444443;
+  --main-color: #e9fafa;
+  --font-color-1: rgb(255, 255, 255);
+  --second-color: #737373;
 }
 
 body {
   width: 85%;
   margin: auto;
 }
+
+/* Estilos de la cabecera */
 
 .header {
   background-image: url(/imagenes/fondo6.png);
@@ -23,11 +28,12 @@ body {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+/* Menu de navegación */
 
 .header-nav {
   display: flex;
   justify-content: flex-end;
-  background-color: #DEFFFF;
+  background-color: var(--main-color);
 }
 
 a {
@@ -47,7 +53,7 @@ a {
 }
 
 .title {
-  background-color:#DEFFFF;
+  background-color: var(--main-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +90,7 @@ h2.title {
 }
 
 footer {
-  background-color: #737373;
+  background-color: var(--second-color);
   text-align: center;
   height: 90px;
   margin: 50px auto 0;
@@ -92,7 +98,7 @@ footer {
 }
 
 h3.footer-title {
-  color: rgb(255, 255, 255);
+  color: var(--second-color);
   font-weight: 500;
   font-size: 20px;
   padding-top: 10px;
@@ -119,7 +125,7 @@ footer ul.footer-list {
   color: rgb(255, 255, 255);
 }
  
-/* CSS de la seccion Sobre Mí */
+/* Estilos de la seccion Sobre Mí */
 
 header.header.sobremi {
   display: flex;
@@ -127,4 +133,10 @@ header.header.sobremi {
   background-color: #444443;
   color: rgb(255, 255, 255);
 
+}
+
+.sobremi {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 15px;
 }
