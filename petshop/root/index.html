@@ -15,14 +15,40 @@
 
 <body>
     <div class="top">
+
         <ul class="list-1">
             <li>Grandes ofertas en comederos</li>
             <ul class="list-2">
-                <li>Español</li>
-                <li>ARG$</li>
+                <li>
+                    <form action="" class="list-3">
+                        <label for="idioma"></label>
+                        <select name="idioma" class="estilo-1">
+                            <option value="espanol">Español</option>
+                            <option value="ingles">Ingles</option>
+                        </select>
+                    </form>
+                </li>
+
+                <li>
+                    <form action="" class="list-3">
+                        <label for="peso"></label>
+                        <select name="peso" class="estilo-1">
+                            <option value="arg">ARG$</option>
+                            <option value="dolar">USD$</option>
+                        </select>
+                    </form>
+                </li>
+
             </ul>
+
+
+
+
         </ul>
     </div>
+
+    <!-- Cabecera del sitio -->
+
     <header class="header">
         <nav class="nav-header">
             <img src="imagenes/Logo2.png" alt="Logo" class="logo">
@@ -35,79 +61,125 @@
         </nav>
     </header>
     <main>
+
+        <!-- Cabecera de la sección principal del sitio -->
+
         <div class="main-header">
-            <h3>¡Es un placer tenerte aquí!</h3>
-            <p>¡Comederos en descuento!</p>
-            <button>COMEDEROS</button>
+            <div class="main-text">
+                <h3>¡Es un placer tenerte aquí!</h3>
+                <p>¡Comederos en descuento!</p>
+                <button class="main-buttom">COMEDEROS</button>
+            </div>
         </div>
-        <section>
-            <i class="fas fa-paw"></i>
+
+        <!-- Seccion principal -->
+
+        <section class="main-section">
+            <i class="fas fa-paw fa-5x paw-gde"></i>
             <h2>Productos Destacados</h2>
-            <ul>
-                <li type=none>Comederos</li>
-                <li type=none>-</li>
-                <li type=none>Accesorios</li>
-                <li type=none>-</li>
-                <li type=none>Comida</li>
+            <ul class="products">
+                <li type="none">Comederos</li>
+                <li type="none">-</li>
+                <li type="none">Accesorios</li>
+                <li type="none">-</li>
+                <li type="none">Comida</li>
             </ul>
-            <div class="card">
-                <img src="imagenes/churrasquito.png" alt="">
-                <p>Juguete Churrasquito</p>
-                <p>$150</p>
-            </div>
-            <div class="card">
-                <img src="imagenes/comedero.png" alt="">
-                <p>Comedero para perro</p>
-                <p>$250</p>
-            </div>
-            <div class="card">
-                <img src="imagenes/Huesito.png" alt="">
-                <p>Juguete Huesito</p>
-                <p>$650</p>
-            </div>
+            <section class="cards-section">
+                <div class="card">
+                    <img src="imagenes/churrasquito.png" alt="">
+                    <p>Juguete Churrasquito</p>
+                    <p class="price">$150</p>
+                </div>
+                <div class="card">
+                    <img src="imagenes/comedero.png" alt="">
+                    <p>Comedero para perro</p>
+                    <p class="price">$250</p>
+                </div>
+                <div class="card">
+                    <img src="imagenes/Huesito.png" alt="">
+                    <p>Juguete Huesito</p>
+                    <p class="price">$650</p>
+                </div>
+            </section>
         </section>
     </main>
-    <form>
-        <h2>Contáctanos</h2>
-        <input type="text" placeholder="Nombre y Apellido">
-        <input type="email" placeholder="Ingresá tu correo electrónico">
-        <input type="text" placeholder="Teléfono">
-        <button type="reset">Resetear</button>
-        <button type="submit">Enviar</button>
+
+    <!-- Formulario -->
+
+    <h2 class="form-title">Contáctanos</h2>
+    <form class="contact-form">
+        <label for="name">
+            <input class="input-form" type="text" placeholder="Nombre y Apellido" required>
+        </label>
+        <label for="email">
+            <input class="input-form" type="email" placeholder="Ingresá tu correo electrónico" required>
+        </label>
+        <label for="phone">
+            <input class="input-form" type="text" placeholder="Teléfono" required></label>
+        <div class="buttom">
+            <button class="btn reset" type="reset">Resetear</button>
+            <button class="btn submit" type="submit">Enviar</button>
+        </div>
     </form>
-    <div>
-        <img src="imagenes/enviar-correo 1.png" alt="icono">
-        <p>Suscríbete para más novedades</p>
-        <form>
-            <input type="email" placeholder="Ingresá tu correo electrónico">
-            <button type="submit">Suscribirme</button>
+
+    <!-- Seccion de suscripción -->
+
+    <div class="subsc">
+        <div class="img">
+            <img src="imagenes/enviar-correo.png" alt="icono">
+            <p>Suscríbete para más novedades</p>
+        </div>
+        <form class="subs-form">
+            <input class="email-2" type="email" placeholder="Ingresá tu correo electrónico">
+            <button class="submit-2" type="submit">Suscribirme</button>
         </form>
     </div>
+
+    <!-- Pie del sitio -->
+
     <footer>
-        <aside>
-            <div>
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Localidad</h3>
-                <p>Calle - provincia</p>
+
+        <div class="footer">
+            <div class="datos">
+                <div class="foot-img">
+                    <img class="foot-icon" src="imagenes/location.png" alt="">
+                </div>
+                <div class="foot-data">
+                    <h3>Location</h3>
+                    <p>Calle - provincia</p>
+                </div>
             </div>
-            <div>
-                <i class="fas fa-phone-alt"></i>
-                <h3>Teléfono</h3>
-                <p>0800 PETSHOP</p>
+            <div class="datos">
+                <div class="foot-img">
+                    <img class="foot-icon" src="imagenes/location.png" alt="">
+                </div>
+                <div class="foot-data">
+                    <h3>Location</h3>
+                    <p>Calle - provincia</p>
+                </div>
             </div>
-            <div>
-                <i class="fas fa-at"></i>
-                <h3>Correo Electrónico</h3>
-                <p>contacto@pershop.com</p>
+            <div class="datos">
+                <div class="foot-img">
+                    <img class="foot-icon" src="imagenes/location.png" alt="">
+                </div>
+                <div class="foot-data">
+                    <h3>Location</h3>
+                    <p>Calle - provincia</p>
+                </div>
             </div>
-        </aside>
-        <aside>
-            <img src="imagenes/Logo2.png" alt="logo" class="logo">
-        </aside>
-        <div>
-            <p>Todos los derechos reservados Front End</p>
         </div>
+
+        <div class="footer">
+            <div class="foot-logo">
+                <img class="logo" src="imagenes/Logo.png" alt="">
+            </div>
+        </div>
+
     </footer>
+
+    <div class="footer-btn">
+        <p>Todos los derechos reservados Front End</p>
+    </div>
 
 </body>
 
