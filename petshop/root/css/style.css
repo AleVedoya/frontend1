@@ -407,7 +407,7 @@ footer img.logo {
   }
 
   #check:checked ~ .nav-list {
-    left: 300px;
+    left: auto;
   }
 
   #check:checked ~ .checkbtn {
