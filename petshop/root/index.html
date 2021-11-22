@@ -14,15 +14,17 @@
 </head>
 
 <body>
+    <!-- top -->
+
     <div class="top">
 
         <ul class="list-1">
             <li>Grandes ofertas en comederos</li>
             <ul class="list-2">
                 <li>
-                    <form action="" class="list-3">
+                    <form class="list-3">
                         <label for="idioma"></label>
-                        <select name="idioma" class="estilo-1">
+                        <select name="idioma" class="estilo-1" id="idioma">
                             <option value="espanol">Español</option>
                             <option value="ingles">Ingles</option>
                         </select>
@@ -30,9 +32,9 @@
                 </li>
 
                 <li>
-                    <form action="" class="list-3">
+                    <form class="list-3">
                         <label for="peso"></label>
-                        <select name="peso" class="estilo-1">
+                        <select name="peso" class="estilo-1" id="peso">
                             <option value="arg">ARG$</option>
                             <option value="dolar">USD$</option>
                         </select>
@@ -41,9 +43,6 @@
 
             </ul>
 
-
-
-
         </ul>
     </div>
 
@@ -51,7 +50,15 @@
 
     <header class="header">
         <nav class="nav-header">
+
             <img src="imagenes/Logo2.png" alt="Logo" class="logo">
+
+            <input type="checkbox" name="checkbtn" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars fa-2x"></i>
+            </label>
+
+
             <ul class="nav-list">
                 <li type="none"><i class="fas fa-paw paw"></i>Categorías</li>
                 <li type="none"><i class="fas fa-paw paw"></i>Pets</li>
@@ -109,13 +116,13 @@
     <h2 class="form-title">Contáctanos</h2>
     <form class="contact-form">
         <label for="name">
-            <input class="input-form" type="text" placeholder="Nombre y Apellido" required>
+            <input class="input-form" type="text" placeholder="Nombre y Apellido" id="name" required>
         </label>
         <label for="email">
-            <input class="input-form" type="email" placeholder="Ingresá tu correo electrónico" required>
+            <input class="input-form" type="email" placeholder="Ingresá tu correo electrónico" id="email" required>
         </label>
         <label for="phone">
-            <input class="input-form" type="text" placeholder="Teléfono" required></label>
+            <input class="input-form" type="text" placeholder="Teléfono" id="phone" required></label>
         <div class="buttom">
             <button class="btn reset" type="reset">Resetear</button>
             <button class="btn submit" type="submit">Enviar</button>
@@ -126,7 +133,7 @@
 
     <div class="subsc">
         <div class="img">
-            <img src="imagenes/enviar-correo.png" alt="icono">
+            <img src="imagenes/enviar-correo.png" alt="icono" class="icono">
             <p>Suscríbete para más novedades</p>
         </div>
         <form class="subs-form">

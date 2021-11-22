@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  list-style: none;
   --main-color: #f0a83e;
   --bottom-color: #222222;
   --second-color: #3c2313;
@@ -13,14 +14,13 @@
   --font-1-color: #ffffff;
 }
 
-/* Estido del top */
+/* Top section styles */
 
 .top {
   background-color: var(--second-color);
   height: 20px;
   width: 100%;
   color: var(--font-1-color);
-  list-style: none;
   font-weight: 400;
   font-size: 10px;
   align-items: center;
@@ -30,13 +30,11 @@ ul.list-1 {
   display: flex;
   justify-content: space-between;
   margin: 0 50px 0 90px;
-  list-style: none;
 }
 
 ul.list-2 {
   display: flex;
   justify-content: space-around;
-  list-style: none;
 }
 
 select.estilo-1 {
@@ -51,7 +49,7 @@ li {
   padding: 5px;
 }
 
-/* Estilos del header */
+/* Header styles */
 
 .nav-header {
   background-color: var(--main-color);
@@ -63,7 +61,15 @@ li {
   padding-right: 40px;
 }
 
-/* Estilos de la barra de navegación */
+.checkbtn {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* Nav bar styles*/
 
 .nav-list {
   display: flex;
@@ -81,7 +87,7 @@ li {
   width: 166px;
 }
 
-/* Estilos de la cabecera de la seccion principal */
+/* Maiin section header styles */
 
 .main-header {
   background-image: url("../imagenes/foto.png");
@@ -126,7 +132,7 @@ li {
   font-size: 16px;
 }
 
-/* Estilos de la sección principal */
+/* Main section styles */
 
 .main-section {
   display: flex;
@@ -157,6 +163,8 @@ h2 {
   padding: 10px;
 }
 
+/* Cards section styles  */
+
 .cards-section {
   display: flex;
 }
@@ -177,7 +185,7 @@ h2 {
   color: var(--main-color);
 }
 
-/* estilos del formulario */
+/* Form styles */
 
 .form-title {
   color: var(--second-color);
@@ -201,7 +209,7 @@ h2 {
   width: 340px;
   height: 40px;
   padding: 15px;
-  margin: 10px;
+  margin: 5px;
 }
 
 .input-form::placeholder {
@@ -223,6 +231,7 @@ h2 {
   font-size: 16px;
   font-weight: 400;
   border: none;
+  color: var(--font-1-color);
 }
 
 .reset {
@@ -233,7 +242,7 @@ h2 {
   background-color: var(--main-color);
 }
 
-/* seccion de suscripción */
+/* Subscription styles */
 
 .subsc {
   background-color: var(--main-color);
@@ -290,7 +299,7 @@ h2 {
   margin-left: 5px;
 }
 
-/* estilos del footer */
+/* Footer styles */
 
 footer {
   background-color: var(--second-color);
@@ -363,4 +372,162 @@ footer img.logo {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Responsive for Mobiles */
+
+@media (max-width: 480px) {
+  /* top styles */
+
+  ul.list-1 {
+    margin: 0 15px 0 15px;
+  }
+
+  /* header styles */
+
+  .checkbtn {
+    display: block;
+    color: var(--font-1-color);
+    cursor: pointer;
+  }
+
+  /* Nav bar styles */
+
+  .nav-list {
+    background-color: var(--main-color);
+    flex-direction: column;
+    align-self: flex-start;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    margin-top: 54px;
+    width: 150px;
+    height: 150px;
+    left: -200px;
+  }
+
+  #check:checked ~ .nav-list {
+    left: 300px;
+  }
+
+  #check:checked ~ .checkbtn {
+    color: var(--second-color);
+  }
+
+  .main-text {
+    justify-content: center;
+  }
+
+  /* Main section */
+
+  .main-section h2 {
+    width: 271px;
+    text-align: center;
+  }
+
+  .cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-form {
+    font-size: 9px;
+    width: 298px;
+  }
+
+  .btn {
+    width: 199px;
+    height: 45px;
+    border-radius: 25px;
+  }
+
+  /* Subscription styles */
+
+  .subsc {
+    flex-direction: column;
+    width: 100%;
+    height: 101px;
+  }
+
+  .img {
+    display: flex;
+    justify-content: space-between;
+    color: var(--font-1-color);
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+  }
+
+  .img p {
+    padding-right: 10px;
+  }
+
+  .subs-form {
+    display: flex;
+    align-items: center;
+  }
+
+  .email-2 {
+    width: 230px;
+    height: 40px;
+    font-size: 10px;
+    position: absolute;
+    left: calc(50% - 230px / 2 - 60px);
+  }
+
+  .email-2::placeholder {
+    font-size: 9px;
+  }
+
+  .submit-2 {
+    font-size: 15px;
+    font-weight: 700;
+    width: 100px;
+    position: relative;
+    left: calc(50% - 100px / 2 + 115px);
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9px;
+    margin-left: 0;
+  }
+
+  .foot-data h3 {
+    background-color: var(--second-color);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .foot-data p {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--font-2-color);
+    margin-top: 0;
+  }
+
+  footer img.logo {
+    position: relative;
+    top: 9px;
+    right: calc(50% - 70px);
+    margin-bottom: 15px;
+  }
+
+  .footer-btn {
+    background-color: var(--bottom-color);
+    color: var(--font-1-color);
+    font-size: 10px;
+    font-weight: 700;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
