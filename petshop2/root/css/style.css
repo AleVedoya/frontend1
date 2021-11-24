@@ -262,13 +262,19 @@
 
 .sub-form {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-top: 14px;
 }
 
+.buttom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .email-2 {
   background-color: var(--font-1-color);
-  width: 261px;
+  width: 250px;
   height: 40px;
   border-radius: 15px;
   border: none;
